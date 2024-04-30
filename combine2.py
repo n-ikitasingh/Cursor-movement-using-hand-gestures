@@ -1,4 +1,3 @@
-E:\Python\HandGesture\2hands\combine2.py
 import cv2
 import numpy as np
 import handtracking1 as htm
