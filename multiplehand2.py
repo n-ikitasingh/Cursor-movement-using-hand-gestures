@@ -16,7 +16,7 @@ while True:
             handType = hand["type"]  # Hand Type Left or Right
 
             fingers = detector.fingersUp(hand)
-            # Perform text editing actions based on finger states or gestures
+            # can add some specific actions to perform text editing actions based on finger states or gestures
 
         if len(hands) == 2:
             hand1, hand2 = hands[0], hands[1]
@@ -26,10 +26,7 @@ while True:
             handType1, handType2 = hand1["type"], hand2["type"]
 
             fingers1, fingers2 = detector.fingersUp(hand1), detector.fingersUp(hand2)
-            # Perform text editing actions based on finger states or gestures between two hands
-            # Implement gestures or interactions between multiple hands if required
-
-            # Visualize hand interactions or relationships between multiple hands, if applicable
+          
 
     cv2.imshow("Image", img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
